@@ -24,7 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
+    padding: 14px 8%;
     border-bottom: 1px solid #f2f2f2;
     z-index: 1000;
 }
@@ -35,7 +35,7 @@ nav {
 }
 
 .nav-links a {
-    margin-left: 25px;
+    margin-left: 22px;
     text-decoration: none;
     color: #666;
     font-size: 14px;
@@ -49,23 +49,19 @@ nav {
 /* HERO */
 
 .hero {
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 8%;
+    padding: 140px 8% 60px 8%;
     max-width: 850px;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     margin-bottom: 14px;
     max-width: 650px;
 }
 
 .hero p {
-    font-size: 17px;
+    font-size: 16px;
     color: #555;
     max-width: 500px;
 }
@@ -73,13 +69,13 @@ nav {
 /* SECTIONS */
 
 .section {
-    padding: 65px 8%;
+    padding: 50px 8%;
     max-width: 850px;
 }
 
 .section h2 {
-    font-size: 24px;
-    margin-bottom: 18px;
+    font-size: 22px;
+    margin-bottom: 16px;
     font-weight: 600;
 }
 
@@ -91,16 +87,16 @@ nav {
 /* PROJECTS */
 
 .project {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     transition: 0.3s ease;
 }
 
 .project:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .project h3 {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 6px;
 }
 
@@ -114,18 +110,18 @@ nav {
 
 footer {
     text-align: center;
-    padding: 28px 0;
+    padding: 25px 0;
     font-size: 13px;
     color: #888;
     border-top: 1px solid #f2f2f2;
 }
 
-/* FADE IN */
+/* FADE IN ANIMATION */
 
 .section,
 .hero {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(18px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
@@ -138,22 +134,22 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        padding: 18px 5%;
+        padding: 14px 5%;
     }
 
     .hero {
-        padding: 0 5%;
+        padding: 120px 5% 50px 5%;
     }
 
     .section {
-        padding: 55px 5%;
+        padding: 45px 5%;
     }
 
     .hero h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .hero p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
