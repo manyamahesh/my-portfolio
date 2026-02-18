@@ -11,8 +11,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
-    color: #1a1a1a;
-    line-height: 1.7;
+    color: #111;
+    line-height: 1.6;
 }
 
 /* NAVBAR */
@@ -24,22 +24,21 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    border-bottom: 1px solid #f0f0f0;
+    padding: 18px 8%;
+    border-bottom: 1px solid #f2f2f2;
     z-index: 1000;
 }
 
 .logo {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .nav-links a {
-    margin-left: 30px;
+    margin-left: 25px;
     text-decoration: none;
-    color: #555;
+    color: #666;
     font-size: 14px;
-    position: relative;
     transition: 0.3s;
 }
 
@@ -50,114 +49,84 @@ nav {
 /* HERO */
 
 .hero {
-    height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 10%;
-    max-width: 900px;
+    padding: 0 8%;
+    max-width: 850px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    max-width: 650px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 17px;
     color: #555;
-    margin-bottom: 30px;
-    max-width: 600px;
-}
-
-/* BUTTONS */
-
-.buttons a {
-    text-decoration: none;
-    padding: 12px 24px;
-    margin-right: 15px;
-    font-size: 14px;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-
-.primary-btn {
-    background-color: #111;
-    color: white;
-}
-
-.primary-btn:hover {
-    background-color: #333;
-}
-
-.secondary-btn {
-    border: 1px solid #ccc;
-    color: #333;
-}
-
-.secondary-btn:hover {
-    background-color: #f5f5f5;
+    max-width: 500px;
 }
 
 /* SECTIONS */
 
 .section {
-    padding: 100px 10%;
-    max-width: 900px;
+    padding: 65px 8%;
+    max-width: 850px;
 }
 
 .section h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    margin-bottom: 18px;
     font-weight: 600;
+}
+
+.section p {
+    margin-bottom: 12px;
+    color: #555;
 }
 
 /* PROJECTS */
 
 .project {
-    margin-bottom: 40px;
-    padding: 20px 0;
+    margin-bottom: 24px;
     transition: 0.3s ease;
 }
 
 .project:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .project h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.project p {
-    color: #555;
-    max-width: 700px;
+    font-size: 18px;
+    margin-bottom: 6px;
 }
 
 /* CONTACT */
 
 .contact p {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 /* FOOTER */
 
 footer {
     text-align: center;
-    padding: 40px 0;
-    font-size: 14px;
+    padding: 28px 0;
+    font-size: 13px;
     color: #888;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid #f2f2f2;
 }
 
-/* FADE-IN ANIMATION */
+/* FADE IN */
 
 .section,
 .hero {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .show {
@@ -169,7 +138,7 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        padding: 20px 5%;
+        padding: 18px 5%;
     }
 
     .hero {
@@ -177,14 +146,14 @@ footer {
     }
 
     .section {
-        padding: 80px 5%;
+        padding: 55px 5%;
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
