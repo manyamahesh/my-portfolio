@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manya Mahesh | UI/UX Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Manya Mahesh</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Case Studies</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>UI/UX Designer & Information Science Student</h1>
+        <p>
+            Designing intuitive digital experiences that balance aesthetics,
+            usability, and real-world impact.
+        </p>
+        <div class="buttons">
+            <a href="#projects" class="primary-btn">View Case Studies</a>
+            <a href="#" class="secondary-btn">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am an Information Science undergraduate passionate about UI/UX design 
+            and interaction systems. My approach focuses on clarity, usability, 
+            and meaningful user experiences.
+        </p>
+        <p>
+            With experience in Figma, Flutter, React, and Firebase, I bridge the gap 
+            between design and development — ensuring ideas are visually appealing 
+            and technically feasible.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Case Studies</h2>
+
+        <div class="project">
+            <h3>Women’s Safety Mobile Application</h3>
+            <p>
+                Designed a one-tap SOS mobile application focused on reducing
+                cognitive load during emergency situations. Created wireframes,
+                high-fidelity prototypes, and implemented the interface using Flutter.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>AI-Powered Resume Analyzer</h3>
+            <p>
+                Designed a structured dashboard for resume-job description comparison,
+                focusing on clarity, data visualization, and usability.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Event Management Mobile App (Internship)</h3>
+            <p>
+                Developed wireframes and interactive prototypes in Figma.
+                Improved navigation hierarchy and visual consistency.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <p>Email: manyamahesh1504@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/manya-mahesh-029518330</p>
+        <p>Bangalore, Karnataka</p>
+    </section>
+
+    <footer>
+        © 2026 Manya Mahesh
+    </footer>
+
+    <!-- Fade-in Script -->
+    <script>
+        const sections = document.querySelectorAll('.section, .hero');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
